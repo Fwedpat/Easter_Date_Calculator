@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="stylesheet.css">
+<head>
+<title>Easter Dates</title>
+</head>
+<div>
+<body>
+ <form action="cgi-bin/Calculator.py" method="GET">
+   <label for="theYear">Enter the year you want to know the date of easter:</label>
+   <input type="number" id="Date" min="1900" max="2099"
+          name="theYear" class="Input"/>
+          <br>
+   <input type="radio" id="Written" name="Format" value="Written" checked="checked">
+   <label for="Written"> Written (24<sup>th</sup> April 2020)</label> <br>
+   <input type="radio" id="Numeric" name="Format" value="Numeric">
+   <label for="Numeric"> Numerically (dd/mm/year)</label> <br>
+   <input type="radio" id="Both" name="Format" value="Both">
+   <label for="Both"> Both (dd/mm/Year and 24<sup>th</sup> April 2020)</label> <br>
+   <input type="submit" value="submit" />
+ </form>
+</body>
+</div>
+</html>
